@@ -7,17 +7,17 @@
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\HelloWorldScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\Utils.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Cocos_2dx\Fishing\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="C:\Cocos_2dx\Fishing\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\MenuScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Utils.cpp">
-      <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -27,20 +27,17 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\HelloWorldScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Utils.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\CloseNormal.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\CloseSelected.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\HelloWorld.png">
-      <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
@@ -48,14 +45,35 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonDisabled.jpg">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonNormal.jpg">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonSelected.jpg">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\CloseNormal.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\CloseSelected.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\HelloWorld.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackground.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackgroundTile_1.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackgroundTile_2.png">
+      <Filter>Resources\images</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\MenuScene.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Utils.h">
-      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +90,9 @@
     </Filter>
     <Filter Include="Resources\fonts">
       <UniqueIdentifier>{BD54D747-317E-3307-B58B-FAE2F59DA569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images">
+      <UniqueIdentifier>{9C096A55-8BEE-36B6-BC21-2764F99FD1B5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res">
       <UniqueIdentifier>{683AE5F3-4CF7-3368-BF3C-40B35B53F891}</UniqueIdentifier>
