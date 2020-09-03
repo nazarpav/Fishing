@@ -59,8 +59,8 @@ bool HelloWorld::init()
 
     // add a label shows "Hello World"
     // create and initialize a label
-
-    auto label = Label::createWithTTF("Edited Hello World", "fonts/Marker Felt.ttf", 24);
+    std::string s = StringUtils::toString(visibleSize.width) + " | " + StringUtils::toString(visibleSize.height);
+    auto label = Label::createWithTTF(s, "fonts/Marker Felt.ttf", 24);
     if (label == nullptr)
     {
         problemLoading("'fonts/Marker Felt.ttf'");

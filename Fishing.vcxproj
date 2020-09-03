@@ -116,7 +116,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -281,7 +282,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -446,7 +448,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -610,7 +613,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -800,6 +804,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\GameScene.cpp" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\AppDelegate.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\HelloWorldScene.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.h" />
@@ -811,6 +816,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.cpp" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\Utils.cpp" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\proj.win32\main.cpp" />
+    <ClInclude Include="Classes\GameScene.h" />
     <ResourceCompile Include="C:\Cocos_2dx\Fishing\proj.win32\game.rc" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\arial.ttf" />

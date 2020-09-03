@@ -1,25 +1,26 @@
 #ifndef PROJ_ANDROID_MENUSCENE_H
 #define PROJ_ANDROID_MENUSCENE_H
+#include <ui/CocosGUI.h>
 #include <cocos2d.h>
 #include <math.h>
 #include "HelloWorldScene.h"
+#include "GameScene.h"
 #include "Utils.h"
-#include <ui/CocosGUI.h>
 class MenuScene :public cocos2d::Scene
 {
 private:
-	cocos2d::Size screenSize;
+	const cocos2d::Size SCREENSIZE;
+	const cocos2d::Size VISIBLESIZE;
+	const cocos2d::Vec2 ORIGIN;
+	const std::string MenuSchedulerKey = "MenuScheduler";
+	const float MenuFontSize = 41;
 	cocos2d::Sprite* _backgroundImage;
-	cocos2d::Sprite* _point;
-	cocos2d::Label* Dl;
+	cocos2d::MenuItemLabel* CreateMenuItem(std::string text, cocos2d::Vec2 position, cocos2d::ccMenuCallback callBack);
 	virtual bool init();
-	void GameCloseCallback(cocos2d::Ref* pSender)const;
-	void GameStartCallback(cocos2d::Ref* pSender)const;
 	void Schedule();
 	void Unschedule();
-	void Update(const float dt);
-	void BackgroundImagesInit();
-	void BackgroundImagesRelease()const;
+	void UpdateMenuBackground(const float dt);
+	void MenuBackgroundInit();
 public:
 	MenuScene();
 	~MenuScene();
