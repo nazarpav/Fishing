@@ -1,12 +1,13 @@
 #ifndef PROJ_ANDROID_MENUSCENE_H
 #define PROJ_ANDROID_MENUSCENE_H
+#pragma once
 #include <ui/CocosGUI.h>
 #include <cocos2d.h>
 #include <math.h>
 #include "HelloWorldScene.h"
 #include "GameScene.h"
 #include "Utils.h"
-class MenuScene :public cocos2d::Scene
+class MenuScene : public cocos2d::Scene
 {
 private:
 	const cocos2d::Size SCREENSIZE;

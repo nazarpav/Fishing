@@ -1,5 +1,5 @@
 #include "MenuScene.h"
-#include<CCDirector.h>
+//#include<CCDirector.h>
 USING_NS_CC;
 MenuScene::MenuScene() :
 	SCREENSIZE(Director::getInstance()->getOpenGLView()->getFrameSize()),
@@ -38,7 +38,7 @@ bool MenuScene::init()
 	Vector<MenuItem*> MenuItems;
 	MenuItems.pushBack(CreateMenuItem("", Vec2(ORIGIN.x + VISIBLESIZE.width / 2, ORIGIN.y + VISIBLESIZE.height / 2 + MenuFontSize * 3.f), [&](Ref* sender) {}));
 	MenuItems.pushBack(CreateMenuItem("Start game", Vec2(ORIGIN.x + VISIBLESIZE.width / 2, ORIGIN.y + VISIBLESIZE.height / 2 + MenuFontSize * 1.5f), [&](Ref* sender) {
-		Director::getInstance()->replaceScene(HelloWorld::createScene());
+		Director::getInstance()->replaceScene(GameScene::createScene());
 		}));
 	MenuItems.pushBack(CreateMenuItem("Creators", Vec2(ORIGIN.x + VISIBLESIZE.width / 2, ORIGIN.y + VISIBLESIZE.height / 2 + MenuFontSize / 2.f), [&](Ref* sender) {
 		}));
