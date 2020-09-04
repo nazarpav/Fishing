@@ -105,7 +105,7 @@ void MenuScene::MenuBackgroundInit()
 	params.sAddressMode = backend::SamplerAddressMode::REPEAT;
 	params.tAddressMode = backend::SamplerAddressMode::REPEAT;
 	_backgroundImage->getTexture()->setTexParameters(params);
-	_backgroundImage->setTextureRect(cocos2d::Rect(0, 0, SCREENSIZE.width, SCREENSIZE.height));
+	_backgroundImage->setTextureRect(cocos2d::Rect(0, 0, VISIBLESIZE.height, VISIBLESIZE.width));
 	this->addChild(_backgroundImage, -1);
 }
 
