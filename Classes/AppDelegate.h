@@ -2,7 +2,6 @@
 #define  _APP_DELEGATE_H_
 #include "cocos2d.h"
 #include "MenuScene.h"
-#include "HelloWorldScene.h"
 class  AppDelegate : private cocos2d::Application
 {
 public:

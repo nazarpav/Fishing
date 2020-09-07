@@ -22,6 +22,15 @@
     <ClCompile Include="Classes\GameScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Player.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\GameBackground.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\UI.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\AppDelegate.h">
@@ -79,6 +88,15 @@
       <Filter>Resources\res</Filter>
     </ClInclude>
     <ClInclude Include="Classes\GameScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Player.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\GameBackground.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\UI.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>

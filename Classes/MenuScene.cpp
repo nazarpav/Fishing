@@ -1,5 +1,4 @@
 #include "MenuScene.h"
-//#include<CCDirector.h>
 USING_NS_CC;
 MenuScene::MenuScene() :
 	SCREENSIZE(Director::getInstance()->getOpenGLView()->getFrameSize()),
