@@ -18,9 +18,7 @@ void Player::init()
 	animFrames.pushBack(SpriteFrame::create("images/Player/EngineFireAnimation/_4.png", Rect(0, 0, 30, 30)));
 
 	mySprite->runAction(RepeatForever::create(Animate::create(Animation::createWithSpriteFrames(animFrames, 0.2f))));
-	mySprite->setPosition(Point::ZERO);
-	sprite->setPosition(Point::ZERO);
-	_playerBody->setPositionOffset(Point::ZERO);
+	_playerBody->setContactTestBitmask(0xFFFFFFFF);
 
 	_player->addComponent(_playerBody);
 	_player->addChild(sprite, 0, "Idle");

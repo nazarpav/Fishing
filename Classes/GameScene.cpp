@@ -7,10 +7,11 @@ bool GameScene::init()
 	{
 		return false;
 	}
-	getPhysicsWorld()->setDebugDrawMask(0xffff);
-	addChild(_player.getNode());
+	//getPhysicsWorld()->setDebugDrawMask(0xffff);
+	addChild(_player.getNode(), 0, 104);
 	_gameBackground.init(this);
 	_gameUi.init();
+	_enemyController = new EnemyController(this, &_gameUi);
 	return true;
 }
 
@@ -21,6 +22,7 @@ GameScene::GameScene() :_gameUi(GameUI(_player.getPhysicsBody(), this,
 
 GameScene::~GameScene()
 {
+	delete _enemyController;
 }
 
 cocos2d::Scene* GameScene::createScene()

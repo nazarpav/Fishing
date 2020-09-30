@@ -1,5 +1,6 @@
 #ifndef PROJ_ANDROID_MENUSCENE_H
 #define PROJ_ANDROID_MENUSCENE_H
+#pragma once
 #include"cocos2d.h"
 #include "GameScene.h"
 #include "Utils.h"

@@ -116,8 +116,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -282,8 +281,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -448,8 +446,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -613,8 +610,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Cocos_2dx/Fishing/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Cocos_2dx/Fishing/bin/Fishing/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -804,38 +800,78 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\GameBackground.cpp" />
-    <ClCompile Include="Classes\GameScene.cpp" />
-    <ClCompile Include="Classes\Player.cpp" />
-    <ClCompile Include="Classes\UI.cpp" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\AppDelegate.h" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\HelloWorldScene.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\GameScene.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Utils.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Player.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\GameBackground.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\UI.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\EnemyShip.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\BaseEnemy.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\EnemyController.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\EnemyMeteor.h" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Enums.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\proj.win32\main.h" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\proj.win32\resource.h" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\AppDelegate.cpp" />
-    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\MenuScene.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\GameScene.cpp" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\Utils.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\Player.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\GameBackground.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\UI.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\EnemyShip.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\BaseEnemy.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\EnemyController.cpp" />
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\EnemyMeteor.cpp" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\proj.win32\main.cpp" />
-    <ClInclude Include="Classes\GameBackground.h" />
-    <ClInclude Include="Classes\GameScene.h" />
-    <ClInclude Include="Classes\Player.h" />
-    <ClInclude Include="Classes\UI.h" />
     <ResourceCompile Include="C:\Cocos_2dx\Fishing\proj.win32\game.rc" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\5by7.ttf" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\fonts\arial.ttf" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonDisabled.jpg" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonNormal.jpg" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonSelected.jpg" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_0.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_1.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_3.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_4.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Background_5.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Block.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonMenuDisabled.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonMenuNormal.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\ButtonMenuSelected.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Buttons\Close.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Buttons\MotionInLeft_Normal.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Buttons\MotionInLeft_Selected.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Buttons\Shoot_Normal.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Buttons\Shoot_Selected.png" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\CloseNormal.png" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\CloseSelected.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Enemy_1.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Enemy_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Enemy_3.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\EnemyShell.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\GameBackground.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\MyShell.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\GitHubIcon.png" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\HelloWorld.png" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackground.png" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackgroundTile_1.png" />
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\MenuBackgroundTile_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\LinkedInIcon.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\_1.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\_3.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\_4.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\PlayerIdle.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\PlayerMotionLeft.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\Enemy_1.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\Enemy_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_1.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_2.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_3.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_4.png" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\music\BackgroundInMenu.mp3" />
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\res\.gitkeep" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\sounds\ButtonPressedSound.wav" />
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\sounds\Shoot.mp3" />
     <ClCompile Include="C:\Cocos_2dx\Fishing\cocos2d\cocos\precheader.cpp" />
   </ItemGroup>
   <ItemGroup>

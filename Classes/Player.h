@@ -6,7 +6,6 @@ class Player {
 private:
 	Utils _utils;
 	cocos2d::Node* _player;
-	cocos2d::Animation* anim;
 	cocos2d::PhysicsBody* _playerBody;
 	void init();
 public:

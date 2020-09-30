@@ -33,7 +33,7 @@ bool MenuScene::init()
 		return false;
 	}
 
-	Director::getInstance()->setDisplayStats(false);                    ////Is FPS and other debug information visible
+	//Director::getInstance()->setDisplayStats(false);                    ////Is FPS and other debug information visible
 	Vector<MenuItem*> MenuItems;
 	MenuItems.pushBack(CreateMenuItem("", Vec2(ORIGIN.x + VISIBLESIZE.width / 2, ORIGIN.y + VISIBLESIZE.height / 2 + MenuFontSize * 3.f), [&](Ref* sender) {}));
 	MenuItems.pushBack(CreateMenuItem("Start game", Vec2(ORIGIN.x + VISIBLESIZE.width / 2, ORIGIN.y + VISIBLESIZE.height / 2 + MenuFontSize * 1.5f), [&](Ref* sender) {

@@ -7,12 +7,17 @@
 class GameUI {
 private:
 	Utils _utils;
-	void ButtonShootCallback(cocos2d::Ref* s);
 	cocos2d::PhysicsBody* _player;
 	cocos2d::Scene* _scene;
+	cocos2d::Label* _score;
+	//cocos2d::Label* _myDebug;
+	int _scoreCount;
 	std::function<void()> _exitGameCallback;
 public:
 	void init();
+	void incrementScore();
+	void decrementScore();
+	//void SetMyDebug(std::string val);
 	GameUI(cocos2d::PhysicsBody* player, cocos2d::Scene* scene, std::function<void()> exitGameCallback);
 	~GameUI();
 };

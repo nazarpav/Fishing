@@ -49,8 +49,8 @@ void GameBackground::UpdateGameBackground(const float dt)
 	}
 	static float t = 0.0f;
 	t += dt;
-	const auto tx = 100 * cosf(t / 10);
-	const auto ty = 100 * sinf(t / 10);
+	const auto tx = 100 * cosf(t / 2);
+	const auto ty = 100 * sinf(t / 2);
 	Size visibleSize = Director::getInstance()->getWinSize();
 	_backgroundSprite->setTextureRect(cocos2d::Rect(tx, ty, _utils.SCREENSIZE.width, _utils.SCREENSIZE.height));
 }
