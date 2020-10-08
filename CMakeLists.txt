@@ -62,11 +62,12 @@ list(APPEND GAME_SOURCE
      Classes/Utils.cpp
      Classes/Player.cpp
      Classes/GameBackground.cpp
-	 Classes/UI.cpp
+	 Classes/GameUI.cpp
 	 Classes/EnemyShip.cpp
 	 Classes/BaseEnemy.cpp
 	 Classes/EnemyController.cpp
 	 Classes/EnemyMeteor.cpp
+	 Classes/Bonus.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
@@ -75,12 +76,13 @@ list(APPEND GAME_HEADER
      Classes/Utils.h
      Classes/Player.h
      Classes/GameBackground.h
-	 Classes/UI.h
+	 Classes/GameUI.h
 	 Classes/EnemyShip.h
 	 Classes/BaseEnemy.h
 	 Classes/EnemyController.h
 	 Classes/EnemyMeteor.h
 	 Classes/Enums.h
+	 Classes/Bonus.h
      )
 
 if(ANDROID)

@@ -6,11 +6,14 @@ class Player {
 private:
 	Utils _utils;
 	cocos2d::Node* _player;
-	cocos2d::PhysicsBody* _playerBody;
 	void init();
+	int _healthCount;
 public:
+	void equipFirstAidKit(int health);
+	int makeDamage(int damage);
 	Player();
 	~Player();
+	int getHealthCount();
 	cocos2d::Node* getNode();
 	cocos2d::PhysicsBody* getPhysicsBody();
 };

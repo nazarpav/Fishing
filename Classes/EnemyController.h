@@ -6,7 +6,9 @@
 #include"EnemyMeteor.h"
 #include"EnemyShip.h"
 #include "cocos\editor-support\cocostudio\SimpleAudioEngine.h"
-#include <UI.h>
+#include <GameUI.h>
+#include <Bonus.h>
+#include <Enums.h>
 //#include<chrono>
 //#include<ctime>
 class EnemyController {
@@ -17,9 +19,11 @@ private:
 	//cocos2d::Animation* _explosionAnimation;
 	cocos2d::Vector<cocos2d::SpriteFrame*> _framesVector;
 	cocos2d::Action* _explosionAnimation;
-	GameUI* _ui;
+	GameUI _ui;
+	void ShellContactEnemy(cocos2d::Node* enemy);
+	void ShellContactPlayer();
 public:
-	EnemyController(cocos2d::Scene* scene, GameUI* ui);
+	EnemyController(cocos2d::Scene* scene, GameUI& ui);
 	bool onContactBegin(cocos2d::PhysicsContact& contact);
 	~EnemyController();
 };

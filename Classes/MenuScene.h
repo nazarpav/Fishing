@@ -7,6 +7,7 @@
 class MenuScene : public cocos2d::Scene
 {
 private:
+	const Utils _utils;
 	const cocos2d::Size SCREENSIZE;
 	const cocos2d::Size VISIBLESIZE;
 	const cocos2d::Vec2 ORIGIN;

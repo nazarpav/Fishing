@@ -4,6 +4,7 @@
 #include"BaseEnemy.h"
 class EnemyShip : public BaseEnemy {
 private:
+	std::string generateSpritePath();
 public:
 	EnemyShip();
 	//~EnemyShip() override;

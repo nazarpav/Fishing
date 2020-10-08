@@ -7,22 +7,24 @@ bool GameScene::init()
 	{
 		return false;
 	}
-	//getPhysicsWorld()->setDebugDrawMask(0xffff);
+	getPhysicsWorld()->setDebugDrawMask(0xffff);
 	addChild(_player.getNode(), 0, 104);
 	_gameBackground.init(this);
 	_gameUi.init();
-	_enemyController = new EnemyController(this, &_gameUi);
+	_enemyController = new EnemyController(this, _gameUi);
 	return true;
 }
 
-GameScene::GameScene() :_gameUi(GameUI(_player.getPhysicsBody(), this,
+GameScene::GameScene() :_gameUi(GameUI(_player, this,
 	[]() {Director::getInstance()->replaceScene(MenuScene::createScene()); }))
 {
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("music/BackgroundSoundInGame.mp3", true);
 }
 
 GameScene::~GameScene()
 {
 	delete _enemyController;
+	CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
 }
 
 cocos2d::Scene* GameScene::createScene()

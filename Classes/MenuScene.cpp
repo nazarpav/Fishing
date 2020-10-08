@@ -6,10 +6,12 @@ MenuScene::MenuScene() :
 	ORIGIN(Director::getInstance()->getVisibleOrigin())
 {
 	Schedule();
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("music/BackgroundSoundInGame.mp3", true);
 }
 MenuScene::~MenuScene()
 {
 	Unschedule();
+	CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
 }
 Scene* MenuScene::createScene()
 {
@@ -97,7 +99,7 @@ void MenuScene::UpdateMenuBackground(const float dt)
 void MenuScene::MenuBackgroundInit()
 {
 	_backgroundImage = Sprite::create("images/Background_5.png");
-	_backgroundImage->setPosition(0, 0);
+	_backgroundImage->setPosition(_utils.ORIGIN.x, _utils.ORIGIN.y);
 	Texture2D::TexParams params;
 	params.minFilter = backend::SamplerFilter::NEAREST;
 	params.magFilter = backend::SamplerFilter::NEAREST;
@@ -105,6 +107,7 @@ void MenuScene::MenuBackgroundInit()
 	params.tAddressMode = backend::SamplerAddressMode::REPEAT;
 	_backgroundImage->getTexture()->setTexParameters(params);
 	_backgroundImage->setTextureRect(cocos2d::Rect(0, 0, VISIBLESIZE.height, VISIBLESIZE.width));
+	_backgroundImage->setScale(_utils.GLOBALSCALE);
 	this->addChild(_backgroundImage, -1);
 }
 

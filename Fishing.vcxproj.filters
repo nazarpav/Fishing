@@ -19,7 +19,7 @@
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\GameBackground.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\UI.cpp">
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\GameUI.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\EnemyShip.cpp">
@@ -32,6 +32,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\EnemyMeteor.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Cocos_2dx\Fishing\Classes\Bonus.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="C:\Cocos_2dx\Fishing\proj.win32\main.cpp">
@@ -60,7 +63,7 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\GameBackground.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\UI.h">
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\GameUI.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\EnemyShip.h">
@@ -76,6 +79,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Enums.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Classes\Bonus.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\proj.win32\main.h">
@@ -156,10 +162,58 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\EnemyShell.png">
       <Filter>Resources\images\Game</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_1.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_2.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_3.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_4.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_5.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\ExplosionAnimation\_6.png">
+      <Filter>Resources\images\Game\ExplosionAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\GameBackground.jpg">
+      <Filter>Resources\images\Game</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\GameBackground.png">
       <Filter>Resources\images\Game</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\MyShell.png">
+      <Filter>Resources\images\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\ammo.png">
+      <Filter>Resources\images\Game\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\bonusBackgroundAnimation\bonusBackground_1.png">
+      <Filter>Resources\images\Game\bonus\bonusBackgroundAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\bonusBackgroundAnimation\bonusBackground_2.png">
+      <Filter>Resources\images\Game\bonus\bonusBackgroundAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\bonusBackgroundAnimation\bonusBackground_3.png">
+      <Filter>Resources\images\Game\bonus\bonusBackgroundAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\bonusBackgroundAnimation\bonusBackground_4.png">
+      <Filter>Resources\images\Game\bonus\bonusBackgroundAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\bonus\firstAidKit.png">
+      <Filter>Resources\images\Game\bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\earthHealthBar.png">
+      <Filter>Resources\images\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\playerHealthBar.png">
+      <Filter>Resources\images\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Game\playerHealthBarBorder.png">
       <Filter>Resources\images\Game</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\GitHubIcon.png">
@@ -183,7 +237,22 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\_4.png">
       <Filter>Resources\images\Player\EngineFireAnimation</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\__1.png">
+      <Filter>Resources\images\Player\EngineFireAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\__2.png">
+      <Filter>Resources\images\Player\EngineFireAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\__3.png">
+      <Filter>Resources\images\Player\EngineFireAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\EngineFireAnimation\__4.png">
+      <Filter>Resources\images\Player\EngineFireAnimation</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\PlayerIdle.png">
+      <Filter>Resources\images\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\PlayerIdle_.png">
       <Filter>Resources\images\Player</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\Player\PlayerMotionLeft.png">
@@ -193,6 +262,9 @@
       <Filter>Resources\images\enemy</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\Enemy_2.png">
+      <Filter>Resources\images\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\Enemy_3.png">
       <Filter>Resources\images\enemy</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_1.png">
@@ -207,7 +279,22 @@
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\engineFireAnimation\_4.png">
       <Filter>Resources\images\enemy\animations\engineFireAnimation</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\meteorTailAnimation\_1.png">
+      <Filter>Resources\images\enemy\animations\meteorTailAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\meteorTailAnimation\_2.png">
+      <Filter>Resources\images\enemy\animations\meteorTailAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\meteorTailAnimation\_3.png">
+      <Filter>Resources\images\enemy\animations\meteorTailAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\images\enemy\animations\meteorTailAnimation\_4.png">
+      <Filter>Resources\images\enemy\animations\meteorTailAnimation</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\music\BackgroundInMenu.mp3">
+      <Filter>Resources\music</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\music\BackgroundSoundInGame.mp3">
       <Filter>Resources\music</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\res\.gitkeep">
@@ -217,6 +304,12 @@
       <Filter>Resources\sounds</Filter>
     </ClInclude>
     <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\sounds\Shoot.mp3">
+      <Filter>Resources\sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\sounds\explosion_1.mp3">
+      <Filter>Resources\sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Cocos_2dx\Fishing\Resources\sounds\explosion_2.mp3">
       <Filter>Resources\sounds</Filter>
     </ClInclude>
   </ItemGroup>
@@ -244,6 +337,15 @@
     <Filter Include="Resources\images\Game">
       <UniqueIdentifier>{1204DD5F-501C-32E6-B77A-EAC0BEB22AB7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\images\Game\ExplosionAnimation">
+      <UniqueIdentifier>{D2783C91-1012-3538-A1CB-358E58433735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images\Game\bonus">
+      <UniqueIdentifier>{DA962604-1628-331D-B650-9F3A35F3F595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images\Game\bonus\bonusBackgroundAnimation">
+      <UniqueIdentifier>{D338FE4B-6D2E-3B59-B32D-A54339580358}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resources\images\Player">
       <UniqueIdentifier>{9614FA76-BDDC-3D4B-93F2-61E70AA828D8}</UniqueIdentifier>
     </Filter>
@@ -258,6 +360,9 @@
     </Filter>
     <Filter Include="Resources\images\enemy\animations\engineFireAnimation">
       <UniqueIdentifier>{22B46989-BCF9-3FFC-8D66-300E3CF168F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images\enemy\animations\meteorTailAnimation">
+      <UniqueIdentifier>{39B84321-535C-355E-BD30-5740868B9882}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\music">
       <UniqueIdentifier>{447DF6F7-1E7E-3227-838C-9059F12E516A}</UniqueIdentifier>
