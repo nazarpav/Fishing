@@ -7,7 +7,7 @@ bool GameScene::init()
 	{
 		return false;
 	}
-	getPhysicsWorld()->setDebugDrawMask(0xffff);
+	//getPhysicsWorld()->setDebugDrawMask(0xffff);
 	addChild(_player.getNode(), 0, 104);
 	_gameBackground.init(this);
 	_gameUi.init();
